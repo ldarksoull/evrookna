@@ -161,6 +161,8 @@
         align-items: center
         @media screen and(max-width: 1017px)
             height: 323px
+        @media screen and(max-width: 799px)
+            height: 260px
         &-inner
             width: 50%
             flex-grow: 0
@@ -172,10 +174,14 @@
             &__title
                 flex-wrap: wrap
                 font-size: 3.125rem
+                @media screen and(max-width: 799px)
+                    font-size: 2rem
             &-btn
                 &__gager
                     margin-top: 50px
                     margin-right: 20px
+                    @media screen and(max-width: 799px)
+                        margin: 10px
                 &__back-call
                     transition: 0.5s
                     &:hover
@@ -263,9 +269,8 @@
                         font-size: 1.125rem
                         opacity: 0.8 
                     @media screen and(max-width: 996px)
-                        width: 100%
-                        max-width: 100%
-                        max-height: 300px
+                        width: 99%
+                        max-width: 99%
 
 
 

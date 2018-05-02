@@ -235,6 +235,9 @@
     @media screen and (max-width: 1017px) {
       .header-body-content {
         height: 323px; } }
+    @media screen and (max-width: 799px) {
+      .header-body-content {
+        height: 260px; } }
     .header-body-content-inner {
       width: 50%;
       -webkit-box-flex: 0;
@@ -257,9 +260,15 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         font-size: 3.125rem; }
+        @media screen and (max-width: 799px) {
+          .header-body-content-inner__title {
+            font-size: 2rem; } }
       .header-body-content-inner-btn__gager {
         margin-top: 50px;
         margin-right: 20px; }
+        @media screen and (max-width: 799px) {
+          .header-body-content-inner-btn__gager {
+            margin: 10px; } }
       .header-body-content-inner-btn__back-call {
         -webkit-transition: 0.5s;
         transition: 0.5s; }
@@ -400,6 +409,5 @@
             opacity: 0.8; }
           @media screen and (max-width: 996px) {
             .main-adventages-content-body-about-us {
-              width: 100%;
-              max-width: 100%;
-              max-height: 300px; } }
+              width: 99%;
+              max-width: 99%; } }
