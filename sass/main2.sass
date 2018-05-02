@@ -1,0 +1,100 @@
+@import "../css/fonts.css"
+.body
+    font-size: 16px
+    font-family: "Segoe UI" , Arial , sans-serif
+.btn
+    background-color: #009cf3
+    border: none
+    border-radius: 15px
+    height: 34px
+    color: #ffffff
+    text-transform: uppercase
+    font-size: 0.75rem
+    font-weight: 700
+    padding: 0px 15px
+    font-family: "Segoe UI"
+.header-main
+    background: rgba(0, 0, 0, 0.7) url("../img/img-top.png") center no-repeat
+    background-size: cover
+    height: 511px
+    color: #ffffff
+.header-topline
+    width: 100%
+    background: rgba(256,256,256,0.7)
+    display: flex
+    align-items: center
+    &-content
+        color: #000000
+        &--logo
+            @media screen and(max-width: 1055px)   
+                align-self: center
+                justify-content: center
+        &--title
+            display: flex
+            &__name
+                font-size: 1.125rem
+            &__adress-text
+                font-family: "Segoe UI semibold"
+                font-size: 1.125rem
+                position: relative
+                &::before
+                    content: ""
+                    background: url("../img/mesto.png") no-repeat
+                    position: absolute
+                    height: 40px
+                    width: 40px
+                    left: -30px
+        &--buttons
+            color: #fff
+            display: flex
+            justify-content: space-between
+            &__calc
+            &__gager
+                background-color: #ffa500
+        &--phone
+            display: flex
+            justify-content: center
+            flex-direction: column
+            &__phone-number
+                display: flex
+                align-items: center
+                a
+                    color: #000
+                    font-family: "Segoe UI semibold"
+                    font-size: 1.125rem
+    .back-call
+        a
+            color: #000000
+            font-size: 0.875rem
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+.header-navigation
+    width: 100%
+    height: 53px
+    background-color: #363636
+    opacity: 0.8
+.header-navigation-content
+    color: #ffffff
+    display: flex
+    height: 53px
+.nav-list
+    width: 569px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+.nav-list-item
+    font-family: "Segoe UI semibold"
+    font-size: 0.875rem
+    display: flex
+.nav-list-item_link
+    color: #fff
+    &:hover
+        color: black
+        text-shadow: #fff 2px 2px 20px, #fff -2px -2px 20px, #fff -2px 2px 20px, #fff 2px -2px 20px 
+        
+
+
+
+

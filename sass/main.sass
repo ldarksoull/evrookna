@@ -1,0 +1,274 @@
+@import "../css/fonts.css"
+.body
+    font-size: 16px
+    font-family: "Segoe UI" , Arial , sans-serif
+.wrapper-main
+    max-width: 1440px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+.btn
+    border: none
+    box-sizing: border-box
+    border-radius: 15px
+    height: 34px
+    color: #ffffff
+    text-transform: uppercase
+    font-size: 0.75rem
+    font-weight: 700
+    padding: 0px 15px
+    font-family: "Segoe UI"
+.btn-blue
+    background-color: #009cf3
+.btn-yellow
+    background-color: #ffa500
+.btn-transparent
+    background: transparent
+    border: 2px solid #009cf3
+.header
+    display: block
+    background: rgba(0, 0, 0, 0.7) url("../img/img-top.png") center no-repeat
+    width: 100%
+    background-size: cover
+    height: 511px
+    color: #ffffff
+.topline
+    display: block
+    width: 100%
+    background: rgba(256,256,256,0.7)
+    &-content
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        padding: 10px 10px
+        box-sizing: border-box
+        &-logo
+            flex-grow: 0
+            display: flex
+            padding-right: 10px
+            @media screen and(max-width: 799px)
+                flex-grow: 1
+                justify-content: center
+                padding: 10px 0
+        &__title
+            flex-grow: 2
+            display: flex
+            padding: 0 10px
+            flex-direction: column
+            align-items: flex-start
+            margin-left: 50px
+            @media screen and(max-width: 799px)
+                flex-grow: 2
+                align-items: center
+                margin-left: 10px
+                padding-bottom: 10px
+            &-name 
+                font-size: 1.125rem
+                color: #000
+                opacity: 0.8
+            &-adress
+                position: relative
+                font-size: 1.125rem
+                color: #000
+                font-weight: 700
+                .geo-icon
+                    position: absolute
+                    left: -30px
+                    top: -2px
+        &-btn //стили для кнопок
+            flex-grow: 1
+            padding: 0 10px
+            display: flex
+            justify-content: space-around
+            @media screen and(max-width: 799px)
+                flex-grow: 1
+            @media screen and(max-width: 468px)
+                padding: 0 50px 10px 50px
+            &__calc
+                margin-right: 10px
+                transition: 0.2s
+                box-sizing: border-box
+                &:hover
+                    background: transparent
+                    color: #000000
+                    box-shadow: 0 0 3pt 2pt #009cf3
+            &__gager
+                &:hover
+                    background: transparent
+                    color: #000000
+                    box-shadow: 0 0 3pt 2px #009cf3
+        &-phone
+            text-align: center
+            flex-grow: 1
+            padding-left: 10px
+            padding-right: 0
+            position: relative
+            @media screen and(max-width: 799px)
+                padding: 0
+            &-number 
+                &__text
+                    color: #000
+                    font-family: "Segoe UI"
+                    font-weight: 600
+                    font-size: 1.125rem
+                    padding: 10px
+                &__link
+                    color: #000
+                    font-weight: 600
+                    font-family: "Segoe UI"
+                    font-size: 1.125rem
+                    text-decoration: none
+            &__back-call-link
+                text-decoration: underline
+                color: #000
+                font-size: 0.8125rem
+.header-nav
+    width: 100%
+    background-color: #363636
+    opacity: 0.8
+    @media screen and(max-width: 568px)
+        display: none
+    &-content
+        display: flex
+        &__list
+            flex-grow: 0
+            width: 50%
+            display: flex
+            padding: 20px 0
+            justify-content: space-between
+            @media screen and(max-width: 799px)
+                flex-grow: 1
+            &-item
+                color: #ffffff
+                font-family: "Segoe UI semibold"
+                font-weight: 600
+                font-size: 0.875rem
+                &-link
+                    color: #ffffff
+                    text-decoration: none
+                    &:hover
+                        color: black
+                        text-shadow: #fff 2px 2px 20px, #fff -2px -2px 20px, #fff -2px 2px 20px, #fff 2px -2px 20px 
+.header-body
+    width: 100%
+    &-content
+        height: 370px
+        min-height: 100%
+        position: relative
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        @media screen and(max-width: 1017px)
+            height: 323px
+        &-inner
+            width: 50%
+            flex-grow: 0
+            display: flex
+            flex-direction: column
+            @media screen and(max-width: 1017px)
+                flex-grow: 1
+                width: 100%
+            &__title
+                flex-wrap: wrap
+                font-size: 3.125rem
+            &-btn
+                &__gager
+                    margin-top: 50px
+                    margin-right: 20px
+                &__back-call
+                    transition: 0.5s
+                    &:hover
+                        background: #009cf3
+.main
+    width: 100%
+    &-adventages
+        background: linear-gradient(#3b3b3b 34%, #ececec 0)
+        &-content
+            display: flex
+            flex-direction: column
+            box-sizing: border-box
+            justify-content: center
+            &__title
+                line-height: 60px
+                font-size: 1.875rem
+                color: #ffffff
+                height: 100px
+                padding: 20px 0
+                @media screen and(max-width: 656px)
+                    align-self: center
+            &-body
+                display: flex
+                flex-direction: row 
+                flex-wrap: wrap  
+                width: 100%
+                position: relative
+                box-sizing: border-box
+                @media screen and(max-width: 996px)
+                    flex-direction: column
+                &-cards
+                    display: flex
+                    flex-wrap: wrap
+                    flex-grow: 2
+                    max-width: 65%
+                    @media screen and(max-width: 996px)
+                        max-width: 100%
+                    &-item
+                        box-sizing: border-box
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        margin: 5px
+                        width: 255px
+                        min-width: 210px
+                        background-color: #ffffff
+                        text-align: center
+                        padding: 10px
+                        .logo
+                            width: 90px
+                            height: 90px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                        .title
+                            font-size: 1.125rem
+                            font-family: "Segoe UI semibold"
+                        .description
+                            padding: 10px
+                            font-size: 1.125rem
+                            opacity: 0.8
+                        @media screen and(max-width: 996px)
+                            flex-grow: 1
+                            min-height: 200px
+                            
+                &-about-us
+                    box-sizing: border-box
+                    flex-grow: 1
+                    padding: 40px
+                    margin: 5px
+                    width: 300px
+                    max-width: 34%
+                    background-color: #d3d5d6
+                    .about-us-inner
+                        margin-top: 63px
+                        position: relative
+                    .title
+                        padding-bottom: 20%
+                        font-family: "Segoe UI semibold"
+                        font-size: 1.125rem
+                        @media screen and(max-width: 996px)
+                            padding: 0
+                    .text
+                        font-size: 1.125rem
+                        opacity: 0.8 
+                    @media screen and(max-width: 996px)
+                        width: 100%
+                        max-width: 100%
+                        max-height: 300px
+
+
+
+
+
+
