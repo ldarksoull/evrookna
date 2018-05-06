@@ -190,6 +190,7 @@
     width: 100%
     &-adventages
         background: linear-gradient(#3b3b3b 34%, #ececec 0)
+        padding-bottom: 50px
         &-content
             display: flex
             flex-direction: column
@@ -216,7 +217,7 @@
                     display: flex
                     flex-wrap: wrap
                     flex-grow: 2
-                    max-width: 65%
+                    max-width: 66%
                     @media screen and(max-width: 996px)
                         max-width: 100%
                     &-item
@@ -226,11 +227,14 @@
                         align-items: center
                         flex-direction: column
                         margin: 5px
-                        width: 255px
+                        width: 285px
                         min-width: 210px
                         background-color: #ffffff
                         text-align: center
                         padding: 10px
+                        @media screen and (max-width: 1388px)
+                            width: 31%
+                            min-width: 190px
                         .logo
                             width: 90px
                             height: 90px
@@ -253,24 +257,306 @@
                     flex-grow: 1
                     padding: 40px
                     margin: 5px
-                    width: 300px
-                    max-width: 34%
+                    width: 305px
+                    max-width: 33%
                     background-color: #d3d5d6
+                    @media screen and(max-width: 996px)
+                        padding: 10px
                     .about-us-inner
                         margin-top: 63px
                         position: relative
+                        @media screen and(max-width: 996px)
+                            margin: 0
+                            padding: 40px
                     .title
                         padding-bottom: 20%
                         font-family: "Segoe UI semibold"
                         font-size: 1.125rem
                         @media screen and(max-width: 996px)
-                            padding: 0
+                            padding-bottom: 0px
+
                     .text
                         font-size: 1.125rem
                         opacity: 0.8 
                     @media screen and(max-width: 996px)
                         width: 99%
-                        max-width: 99%
+                        max-width: 100%
+                    @media screen and(max-width: 556px)
+                        width: 98%
+                        max-width: 100%
+    &-questions
+        width: 100%
+        background: #ffffff
+        &-content
+            display: flex
+            align-items: center
+            justify-content: space-between
+            @media screen and(max-width: 650px)
+                flex-direction: column
+                justify-content: center
+            &-title
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 50%
+                padding: 30px 10px
+                @media screen and(max-width: 650px)
+                    width: 100%
+                    text-align: center
+                &__text
+                    text-align: left
+                    @media screen and(max-width: 515px)
+                        text-align: center
+                    &--normal
+                        font-size: 2.25rem
+                        font-family: "Segoe UI light"
+                        font-weight: 300
+                    &--bold
+                        font-size: 2.25rem
+                        font-family: "Segoe UI semibold"
+                        font-weight: 400
+                &-phone
+                    padding: 10px 0
+                    font-size: 1.5rem
+                    font-family: "Segoe UI"
+                    opacity: 0.7
+                    &__link
+                        text-decoration: none
+                        color: #000000
+            &-inputs
+                display: flex
+                height: 140px
+                &-form
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-around
+                    &__input-name
+                        border-radius: 10px
+                        padding: 3px 20px
+                        font-size: 0.875rem
+                    &__input-number
+                        border-radius: 10px
+                        padding: 3px 20px
+                        font-size: 0.875rem
+            &-btn
+                display: flex
+                height: 140px
+                width: 300px
+                align-items: center
+                justify-content: center
+                &-wrapper
+                    .call-me
+                        background-color: #ffa12d
+                        padding: 14px 27px
+                        font-size: 1rem
+                        color: #fff
+                        border: none
+                        border-radius: 10px
+    &-windows-calc
+        width: 100%
+        background-color: #ececec
+        &-content
+            padding-bottom: 50px
+            &-title
+                padding: 30px 0
+                font-size: 1.875rem
+                color: #000000
+                font-family: "Segoe UI semibold"
+            &-inner
+                display: flex
+                @media screen and(max-width: 930px)
+                    flex-direction: column
+                &-left
+                    width: 50%
+                    margin-right: 20px
+                    @media screen and(max-width: 930px)
+                        width: 100%
+                    .construction-type
+                        &-title
+                            width: 100%
+                            background-color: #009cf3
+                            padding: 20px 0
+                            color: #fff
+                            font-size: 1.5rem
+                            text-align: center
+                        &-body
+                            height: 600px
+                        &-price
+                            background-color: #dcdcdc
+                            padding: 20px 50px
+                            &__text
+                                font-size: 1.125rem
+                            &__num
+                                font-size: 1.875rem
+                                font-weight: 700
+                            &__rub
+                                font-size: 1.125rem
+                                font-family: "Segoe UI semibold"
+                &-right
+                    width: 50%
+                    @media screen and(max-width: 930px)
+                        width: 100%
+                    .wood-type
+                        &-title
+                            width: 100%
+                            background-color: #009cf3
+                            padding: 20px 0
+                            color: #fff
+                            font-size: 1.5rem
+                            text-align: center
+                        &-body
+                            height: 200px
+                    .features
+                        &-title
+                            width: 100%
+                            background-color: #009cf3
+                            padding: 20px 0
+                            color: #fff
+                            font-size: 1.5rem
+                            text-align: center
+                        &-body
+                            height: 328px
+                        &-footer
+                            display: flex
+                            color: #fff
+                            justify-content: space-between
+                            background-color: #3b3b3b
+                            padding: 20px 50px
+                            &-price
+                                &__text
+                                    font-size: 1.125rem
+                                &__num
+                                    font-size: 1.875rem
+                                    font-weight: 700
+                                &__rub
+                                    font-size: 1.125rem
+                                    font-family: "Segoe UI semibold"
+                            &-order
+    &-portfolio
+        width: 100%
+        background: linear-gradient(#3b3b3b 34%, #ececec 0)
+        padding-bottom: 50px
+        &-content
+            transition: 1.5s
+            &__title
+                line-height: 60px
+                font-size: 1.875rem
+                color: #ffffff
+                height: 100px
+                padding: 20px 0
+                @media screen and(max-width: 656px)
+                    align-self: center
+            &-works
+                display: flex
+                flex-wrap: wrap
+                padding-bottom: 30px
+                justify-content: center
+                align-items: center
+                &-work
+                    margin: 5px
+                    position: relative
+                    transition: 0.5s
+                    .hover
+                        height: 99%
+                        width: 100%
+                        display: none
+                        flex-direction: column
+                        position: absolute
+                        justify-content: center
+                        align-items: center
+                        background-color: #000000
+                        opacity: 0.8
+                        top: 0
+                        left: 0
+                        text-align: center
+                        z-index: 100
+                        .hover__title
+                            font-size: 1.875rem
+                            color: #ffffff
+                            font-family: "Segoe UI semibold"
+                            padding: 30px 0
+                        .hover__date
+                            font-size: 1.5rem
+                            color: #ffffff
+                            opacity: 0.8
+                            padding: 30px 0
+                    &:hover > .hover
+                        display: flex
+                        cursor: pointer
+
+            &-btn
+                padding: 40px
+                display: flex
+                justify-content: center
+                align-items: center
+                &-projects
+                    transition: 0.5s
+                    background: #f99a22
+                    font-size: 1.875rem
+                    color: #ffffff
+                    padding: 15px 50px
+                    border: none
+                    &:hover
+                        background: #099a42
+    &-reviews
+        width: 100%
+        &-title
+            background: #ffffff
+            padding-bottom: 40px 
+            padding-top: 40px
+            &-text
+                font-size: 1.875rem
+                font-family: "Segoe UI semibold"
+                padding: 10px 0
+            &-links
+                opacity: 0.7
+                color: #000000
+                font-family: "Segoe UI semibold"
+                font-size: 1.125rem
+                padding: 10px 0
+                &--link
+                    text-decoration: none
+                    color: #000000
+                    &:hover
+                        text-decoration: underline
+        &-body
+            width: 100%
+            background: #ececec
+            &-content
+                display: flex
+                justify-content: space-between
+                padding: 40px 40px 140px 40px
+                @media screen and(max-width: 1000px)
+                    flex-wrap: wrap
+                @media screen and(max-width: 819px)
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    padding-bottom: 40px
+                &-item
+                    display: flex
+                    padding: 20px 0
+                    &__img
+                        padding-right: 20px
+                    &-main
+                        width: 250px
+                        padding-top: 10px
+                        &__name
+                            font-size: 1.125rem
+                            font-family: "Segoe UI semibold"
+                        &__date
+                            opacity: 0.7
+                            font-size: 0.875rem                           
+                        &__text
+                            margin-top: 20px
+                            font-size: 0.875rem
+
+
+
+
+                            
+
+
 
 
 

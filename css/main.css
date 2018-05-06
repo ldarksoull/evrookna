@@ -279,7 +279,8 @@
   width: 100%; }
   .main-adventages {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, #3b3b3b), color-stop(0, #ececec));
-    background: linear-gradient(#3b3b3b 34%, #ececec 0); }
+    background: linear-gradient(#3b3b3b 34%, #ececec 0);
+    padding-bottom: 50px; }
     .main-adventages-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -332,7 +333,7 @@
           -webkit-box-flex: 2;
           -ms-flex-positive: 2;
           flex-grow: 2;
-          max-width: 65%; }
+          max-width: 66%; }
           @media screen and (max-width: 996px) {
             .main-adventages-content-body-cards {
               max-width: 100%; } }
@@ -353,11 +354,15 @@
             -ms-flex-direction: column;
             flex-direction: column;
             margin: 5px;
-            width: 255px;
+            width: 285px;
             min-width: 210px;
             background-color: #ffffff;
             text-align: center;
             padding: 10px; }
+            @media screen and (max-width: 1388px) {
+              .main-adventages-content-body-cards-item {
+                width: 31%;
+                min-width: 190px; } }
             .main-adventages-content-body-cards-item .logo {
               width: 90px;
               height: 90px;
@@ -391,23 +396,384 @@
           flex-grow: 1;
           padding: 40px;
           margin: 5px;
-          width: 300px;
-          max-width: 34%;
+          width: 305px;
+          max-width: 33%;
           background-color: #d3d5d6; }
+          @media screen and (max-width: 996px) {
+            .main-adventages-content-body-about-us {
+              padding: 10px; } }
           .main-adventages-content-body-about-us .about-us-inner {
             margin-top: 63px;
             position: relative; }
+            @media screen and (max-width: 996px) {
+              .main-adventages-content-body-about-us .about-us-inner {
+                margin: 0;
+                padding: 40px; } }
           .main-adventages-content-body-about-us .title {
             padding-bottom: 20%;
             font-family: "Segoe UI semibold";
             font-size: 1.125rem; }
             @media screen and (max-width: 996px) {
               .main-adventages-content-body-about-us .title {
-                padding: 0; } }
+                padding-bottom: 0px; } }
           .main-adventages-content-body-about-us .text {
             font-size: 1.125rem;
             opacity: 0.8; }
           @media screen and (max-width: 996px) {
             .main-adventages-content-body-about-us {
               width: 99%;
-              max-width: 99%; } }
+              max-width: 100%; } }
+          @media screen and (max-width: 556px) {
+            .main-adventages-content-body-about-us {
+              width: 98%;
+              max-width: 100%; } }
+  .main-questions {
+    width: 100%;
+    background: #ffffff; }
+    .main-questions-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media screen and (max-width: 650px) {
+        .main-questions-content {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
+      .main-questions-content-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 50%;
+        padding: 30px 10px; }
+        @media screen and (max-width: 650px) {
+          .main-questions-content-title {
+            width: 100%;
+            text-align: center; } }
+        .main-questions-content-title__text {
+          text-align: left; }
+          @media screen and (max-width: 515px) {
+            .main-questions-content-title__text {
+              text-align: center; } }
+          .main-questions-content-title__text--normal {
+            font-size: 2.25rem;
+            font-family: "Segoe UI light";
+            font-weight: 300; }
+          .main-questions-content-title__text--bold {
+            font-size: 2.25rem;
+            font-family: "Segoe UI semibold";
+            font-weight: 400; }
+        .main-questions-content-title-phone {
+          padding: 10px 0;
+          font-size: 1.5rem;
+          font-family: "Segoe UI";
+          opacity: 0.7; }
+          .main-questions-content-title-phone__link {
+            text-decoration: none;
+            color: #000000; }
+      .main-questions-content-inputs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 140px; }
+        .main-questions-content-inputs-form {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-pack: distribute;
+          justify-content: space-around; }
+          .main-questions-content-inputs-form__input-name {
+            border-radius: 10px;
+            padding: 3px 20px;
+            font-size: 0.875rem; }
+          .main-questions-content-inputs-form__input-number {
+            border-radius: 10px;
+            padding: 3px 20px;
+            font-size: 0.875rem; }
+      .main-questions-content-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 140px;
+        width: 300px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .main-questions-content-btn-wrapper .call-me {
+          background-color: #ffa12d;
+          padding: 14px 27px;
+          font-size: 1rem;
+          color: #fff;
+          border: none;
+          border-radius: 10px; }
+  .main-windows-calc {
+    width: 100%;
+    background-color: #ececec; }
+    .main-windows-calc-content {
+      padding-bottom: 50px; }
+      .main-windows-calc-content-title {
+        padding: 30px 0;
+        font-size: 1.875rem;
+        color: #000000;
+        font-family: "Segoe UI semibold"; }
+      .main-windows-calc-content-inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        @media screen and (max-width: 930px) {
+          .main-windows-calc-content-inner {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; } }
+        .main-windows-calc-content-inner-left {
+          width: 50%;
+          margin-right: 20px; }
+          @media screen and (max-width: 930px) {
+            .main-windows-calc-content-inner-left {
+              width: 100%; } }
+          .main-windows-calc-content-inner-left .construction-type-title {
+            width: 100%;
+            background-color: #009cf3;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 1.5rem;
+            text-align: center; }
+          .main-windows-calc-content-inner-left .construction-type-body {
+            height: 600px; }
+          .main-windows-calc-content-inner-left .construction-type-price {
+            background-color: #dcdcdc;
+            padding: 20px 50px; }
+            .main-windows-calc-content-inner-left .construction-type-price__text {
+              font-size: 1.125rem; }
+            .main-windows-calc-content-inner-left .construction-type-price__num {
+              font-size: 1.875rem;
+              font-weight: 700; }
+            .main-windows-calc-content-inner-left .construction-type-price__rub {
+              font-size: 1.125rem;
+              font-family: "Segoe UI semibold"; }
+        .main-windows-calc-content-inner-right {
+          width: 50%; }
+          @media screen and (max-width: 930px) {
+            .main-windows-calc-content-inner-right {
+              width: 100%; } }
+          .main-windows-calc-content-inner-right .wood-type-title {
+            width: 100%;
+            background-color: #009cf3;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 1.5rem;
+            text-align: center; }
+          .main-windows-calc-content-inner-right .wood-type-body {
+            height: 200px; }
+          .main-windows-calc-content-inner-right .features-title {
+            width: 100%;
+            background-color: #009cf3;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 1.5rem;
+            text-align: center; }
+          .main-windows-calc-content-inner-right .features-body {
+            height: 328px; }
+          .main-windows-calc-content-inner-right .features-footer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            color: #fff;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            background-color: #3b3b3b;
+            padding: 20px 50px; }
+            .main-windows-calc-content-inner-right .features-footer-price__text {
+              font-size: 1.125rem; }
+            .main-windows-calc-content-inner-right .features-footer-price__num {
+              font-size: 1.875rem;
+              font-weight: 700; }
+            .main-windows-calc-content-inner-right .features-footer-price__rub {
+              font-size: 1.125rem;
+              font-family: "Segoe UI semibold"; }
+  .main-portfolio {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, #3b3b3b), color-stop(0, #ececec));
+    background: linear-gradient(#3b3b3b 34%, #ececec 0);
+    padding-bottom: 50px; }
+    .main-portfolio-content {
+      -webkit-transition: 1.5s;
+      transition: 1.5s; }
+      .main-portfolio-content__title {
+        line-height: 60px;
+        font-size: 1.875rem;
+        color: #ffffff;
+        height: 100px;
+        padding: 20px 0; }
+        @media screen and (max-width: 656px) {
+          .main-portfolio-content__title {
+            -ms-flex-item-align: center;
+            align-self: center; } }
+      .main-portfolio-content-works {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .main-portfolio-content-works-work {
+          margin: 5px;
+          position: relative;
+          -webkit-transition: 0.5s;
+          transition: 0.5s; }
+          .main-portfolio-content-works-work .hover {
+            height: 99%;
+            width: 100%;
+            display: none;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            position: absolute;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #000000;
+            opacity: 0.8;
+            top: 0;
+            left: 0;
+            text-align: center;
+            z-index: 100; }
+            .main-portfolio-content-works-work .hover .hover__title {
+              font-size: 1.875rem;
+              color: #ffffff;
+              font-family: "Segoe UI semibold";
+              padding: 30px 0; }
+            .main-portfolio-content-works-work .hover .hover__date {
+              font-size: 1.5rem;
+              color: #ffffff;
+              opacity: 0.8;
+              padding: 30px 0; }
+          .main-portfolio-content-works-work:hover > .hover {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            cursor: pointer; }
+      .main-portfolio-content-btn {
+        padding: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .main-portfolio-content-btn-projects {
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          background: #f99a22;
+          font-size: 1.875rem;
+          color: #ffffff;
+          padding: 15px 50px;
+          border: none; }
+          .main-portfolio-content-btn-projects:hover {
+            background: #099a42; }
+  .main-reviews {
+    width: 100%; }
+    .main-reviews-title {
+      background: #ffffff;
+      padding-bottom: 40px;
+      padding-top: 40px; }
+      .main-reviews-title-text {
+        font-size: 1.875rem;
+        font-family: "Segoe UI semibold";
+        padding: 10px 0; }
+      .main-reviews-title-links {
+        opacity: 0.7;
+        color: #000000;
+        font-family: "Segoe UI semibold";
+        font-size: 1.125rem;
+        padding: 10px 0; }
+        .main-reviews-title-links--link {
+          text-decoration: none;
+          color: #000000; }
+          .main-reviews-title-links--link:hover {
+            text-decoration: underline; }
+    .main-reviews-body {
+      width: 100%;
+      background: #ececec; }
+      .main-reviews-body-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 40px 40px 140px 40px; }
+        @media screen and (max-width: 1000px) {
+          .main-reviews-body-content {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+        @media screen and (max-width: 819px) {
+          .main-reviews-body-content {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-bottom: 40px; } }
+        .main-reviews-body-content-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          padding: 20px 0; }
+          .main-reviews-body-content-item__img {
+            padding-right: 20px; }
+          .main-reviews-body-content-item-main {
+            width: 250px;
+            padding-top: 10px; }
+            .main-reviews-body-content-item-main__name {
+              font-size: 1.125rem;
+              font-family: "Segoe UI semibold"; }
+            .main-reviews-body-content-item-main__date {
+              opacity: 0.7;
+              font-size: 0.875rem; }
+            .main-reviews-body-content-item-main__text {
+              margin-top: 20px;
+              font-size: 0.875rem; }
