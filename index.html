@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Евроокна</title>
 </head>
 
 <body class="body">
-    <header class="header">
+        <button id="trigger" class="btn-menu cmn-toggle-switch cmn-toggle-switch__htla">
+            <span>toggle menu</span>
+        </button>
+    <header class="header" id="main">
         <section class="topline">
             <div class="topline-content wrapper-main">
                 <div class="topline-content-logo">
@@ -42,7 +46,9 @@
                 </div>
             </div>
         </section>
-        <nav class="header-nav">
+        
+
+        <nav class="header-nav" id="offcanvas">
             <div class="header-nav-content wrapper-main">
                 <ul class="header-nav-content__list">
                     <li class="header-nav-content__list-item">
@@ -206,7 +212,7 @@
                 </div>
             </div>
         </section>
-        <section class="main-portfolio">
+        <section class="main-portfolio" id="slidebox">
             <div class="main-portfolio-content wrapper-main">
                 <div class="main-portfolio-content__title">Портфолио</div>
                 <div class="main-portfolio-content-works">
@@ -345,7 +351,7 @@
                             <a class="footer-content-navigation-list-item__link item-text" href="#">Разработка проекта</a>
                         </li>
                         <li class="footer-content-navigation-list-item">
-                             <a class="footer-content-navigation-list-item__link item-text" href="#">Подбор цвета</a>
+                            <a class="footer-content-navigation-list-item__link item-text" href="#">Подбор цвета</a>
                         </li>
                         <li class="footer-content-navigation-list-item">
                             <a class="footer-content-navigation-list-item__link item-text" href="#">Гарантия</a>
@@ -358,7 +364,7 @@
             </nav>
             <div class="footer-content-contacts">
                 <div class="footer-content-contacts-adress">
-                    <a class="footer-content-contacts-adress__item item-text" href="tel:8152448868">(8152) 44 88  68</a>
+                    <a class="footer-content-contacts-adress__item item-text" href="tel:8152448868">(8152) 44 88 68</a>
                     <a class="footer-content-contacts-adress__item item-text" href="mailto:">A_Tsabulin@mail.ru</a>
                     <div class="footer-content-contacts-adress__item item-text">ул. Трудовые Резервы д. 6, оф.3</div>
                     <div class="footer-content-contacts-adress__item item-text">с 9.00 - 21.00</div>
@@ -366,15 +372,26 @@
                 <div class="footer-content-contacts-socials">
                     <div class="footer-content-contacts-socials__title title-text">Следите за нами</div>
                     <div class="footer-content-contacts-socials__icons">
-                        <a class="footer-content-contacts-socials__icons icons" href="#"><i class="fab fa-vk"></i></a>
-                        <a class="footer-content-contacts-socials__icons icons" href="#"><i class="fab fa-odnoklassniki "></i></a>
-                        <a class="footer-content-contacts-socials__icons icons" href="#"><i class="fas fa-at"></i></a>
+                        <a class="footer-content-contacts-socials__icons icons" href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a class="footer-content-contacts-socials__icons icons" href="#">
+                            <i class="fab fa-odnoklassniki "></i>
+                        </a>
+                        <a class="footer-content-contacts-socials__icons icons" href="#">
+                            <i class="fas fa-at"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.mobile-offcanvas-menu.js"></script>
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>
