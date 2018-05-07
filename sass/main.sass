@@ -411,6 +411,76 @@ a
                             text-align: center
                         &-body
                             height: 600px
+                            &-wrapper
+                                display: flex
+                                justify-content: space-between
+                            &-wincalc
+                                display: flex
+                                padding: 30px
+                            .wincalc-selector
+                                display: flex
+                                &-item
+                                    padding: 15px
+                                    box-sizing: border-box
+                                    img
+                                        cursor: pointer
+                                        &:hover
+                                            box-shadow: 0px 0px 0px 5px #ffa12d
+                                            border-radius: 8px
+                            &-addwin
+                                flex-basis: 20%
+                                display: flex
+                                flex-direction: column
+                                justify-content: flex-start
+                                .addwin-item
+                                    height: 85px
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    background: #a5d4ee
+                                .addwin-item--active
+                                    background: #f99a22
+                                .add
+                                    position: relative
+                                .plus
+                                    display: block
+                                    position: absolute
+                                    top: 10px
+                                    right: 10px
+                            &-winimage
+                                flex-basis: 60%
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                img
+                                    max-height: 350px
+                                    max-width: 350px
+                                    display: none
+                                .current-image
+                                    display: block
+                            &-vertical-slider
+                                flex-basis: 20%
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+                                .vertslider-input
+                                    text-align: center
+                                    margin-bottom: 26px
+                                    width: 72px
+                                    height: 29px
+                                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7)
+                                    border-radius: 2px
+                                    background-color: #ffffff
+                            .botslider-input
+                                text-align: center
+                                margin-bottom: 26px
+                                width: 72px
+                                height: 29px
+                                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7)
+                                border-radius: 2px
+                                background-color: #ffffff
+                        
                         &-price
                             background-color: #dcdcdc
                             padding: 20px 50px

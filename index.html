@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Евроокна</title>
 </head>
 
 <body class="body">
-        <div class="icon-menu">
-            <img src="img/menu-ham-icon.png">
-        </div>
-        <div class="icon-close">
-            <img src="img/close-btn.png">
-        </div>
+    <div class="icon-menu">
+        <img src="img/menu-ham-icon.png">
+    </div>
+    <div class="icon-close">
+        <img src="img/close-btn.png">
+    </div>
     <header class="header" id="main">
         <section class="topline">
             <div class="topline-content wrapper-main">
@@ -180,7 +181,49 @@
                         <div class="construction-type">
                             <header class="construction-type-title">1 Выберите тип Вашей конструкции</header>
                             <div class="construction-type-body">
-
+                                <div class="construction-type-body-wincalc">
+                                    <ul class="wincalc-selector">
+                                        <li class="wincalc-selector-item">
+                                            <img src="img/1stvorka.png" alt="">
+                                        </li>
+                                        <li class="wincalc-selector-item">
+                                            <img src="img/2stvorki.png" alt="">
+                                        </li>
+                                        <li class="wincalc-selector-item">
+                                            <img src="img/3stvorki.png" alt="">
+                                        </li>
+                                        <li class="wincalc-selector-item">
+                                            <img src="img/balkon.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="construction-type-body-wrapper">
+                                    <div class="construction-type-body-addwin">
+                                        <div class="addwin-item addwin-item--active">
+                                            <img src="img/okno.png" alt="okno">
+                                        </div>
+                                        <div class="addwin-item add">
+                                            <img src="img/okno.png" alt="okno">
+                                            <img class="plus" src="img/plus-icon.png" alt="plus">
+                                        </div>
+                                    </div>
+                                    <div class="construction-type-body-winimage">
+                                        <img src="img/1okno.png" alt="">
+                                        <img class="current-image" src="img/okno-main.png" alt="">
+                                        <img src="img/3okno.png" alt="">
+                                        <img src="img/balkon.png" alt="">
+                                    </div>
+                                    <div class="construction-type-body-vertical-slider">
+                                        <label for="amount"></label>
+                                        <input type="text" class="vertslider-input" id="amount" readonly>
+                                        <div id="slider-vertical" style="height:240px;"></div>
+                                    </div>
+                                </div>
+                                <div class="construction-type-body-bottom-slider">
+                                    <label for="amount2"></label>
+                                    <input type="text" id="amount2" class="botslider-input" readonly>
+                                    <div id="slider-range-min"></div>
+                                </div>
                             </div>
                             <footer class="construction-type-price">
                                 <p class="price__text">Стоимость окна</p>
@@ -390,6 +433,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
         crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/script.js"></script>
 </body>
 
