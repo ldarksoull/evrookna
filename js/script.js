@@ -1,28 +1,54 @@
-// Менюшка
-if($(window).width() < 568){
-$("#offcanvas").offcanvasmenu({
-    // trigger element
-    menuTrigger: "trigger",
-    // or 'left'
-    position: "left",
-    // animation speed
-    speed: "0.2",
-    // menu width
-    width: "200px"
-  });}
-// кнопка менюшки
-(function() {
-    "use strict";
-    var toggles = document.querySelectorAll(".cmn-toggle-switch");
-  
-    for (var i = toggles.length - 1; i >= 0; i--) {
-      var toggle = toggles[i];
-      toggleHandler(toggle);
-    };
-    function toggleHandler(toggle) {
-      toggle.addEventListener( "click", function(e) {
-        e.preventDefault();
-        (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
-      });
-    }
-  })();
+var main = function() { //главная функция
+ 
+  $('.icon-menu').click(function() { /* выбираем класс icon-menu и
+             добавляем метод click с функцией, вызываемой при клике */
+      $('.menu').animate({ //выбираем класс menu и метод animate
+          right: '0px' 
+      }, 200); //скорость движения меню в мс
+      $('.icon-menu').animate({ //выбираем класс menu и метод animate
+        right: '285px' /* теперь при клике по иконке, меню, скрытое за
+           левой границей на 285px, изменит свое положение на 0px и станет видимым */
+    }, 200);
+    $('.icon-close').animate({ //выбираем класс menu и метод animate
+      right: '0px' /* теперь при клике по иконке, меню, скрытое за
+         левой границей на 285px, изменит свое положение на 0px и станет видимым */
+  }, 200);
+       
+      $('.body').animate({ //выбираем тег body и метод animate
+
+          right: '285px' /* чтобы всё содержимое также сдвигалось вправо
+             при открытии меню, установим ему положение 285px */
+
+      }, 200); //скорость движения меню в мс
+  });
+
+  $('.icon-close').click(function() { //выбираем класс icon-close и метод click
+
+      $('.menu').animate({ //выбираем класс menu и метод animate
+
+          right: '-285px' /* при клике на крестик меню вернется назад в свое
+             положение и скроется */
+
+      }, 200); //скорость движения меню в мс
+      $('.icon-close').animate({ //выбираем класс menu и метод animate
+
+        right: '-285px' /* при клике на крестик меню вернется назад в свое
+           положение и скроется */
+
+    }, 200);
+    $('.icon-menu').animate({ //выбираем класс menu и метод animate
+
+      right: '0px' /* при клике на крестик меню вернется назад в свое
+         положение и скроется */
+
+  }, 200);
+       
+  $('.body').animate({ //выбираем тег body и метод animate
+
+          right: '0px' //а содержимое страницы снова вернется в положение 0px
+
+      }, 200); //скорость движения меню в мс
+  });
+};
+
+$(document).ready(main);

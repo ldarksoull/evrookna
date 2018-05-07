@@ -4,7 +4,7 @@
  *
  * Plugin: offcanvas-mobile-menu
  * https://github.com/jaynoe/offcanvas-mobile-menu
-*/
+*/if($(window).width() < 568){
 ;(function($){
 
   $.fn.offcanvasmenu = function(options){
@@ -122,4 +122,4 @@
 
   };
 
-})(jQuery);
+})(jQuery)};

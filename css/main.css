@@ -1,7 +1,8 @@
 @import url(../css/fonts.css);
 .body {
   font-size: 16px;
-  font-family: "Segoe UI" , Arial , sans-serif; }
+  font-family: "Segoe UI" , Arial , sans-serif;
+  position: relative; }
 
 a {
   text-decoration: none;
@@ -188,11 +189,35 @@ a {
   opacity: 0.8; }
   @media screen and (max-width: 568px) {
     .header-nav {
-      display: none; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: fixed;
+      background: #000;
+      z-index: 100;
+      top: 0;
+      right: -285px;
+      height: 100vh;
+      width: 285px; } }
+  @media screen and (max-width: 568px) {
+    .header-nav .wrapper-main {
+      padding: 0; } }
   .header-nav-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (max-width: 568px) {
+      .header-nav-content {
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-shadow: inset 0px 0px 20px 0px #009cf3, 0px 0px 0px 0px #009cf3;
+        box-shadow: inset 0px 0px 20px 0px #009cf3, 0px 0px 0px 0px #009cf3; } }
     .header-nav-content__list {
       -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -215,12 +240,23 @@ a {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
-          flex-direction: column; } }
+          flex-direction: column;
+          width: 285px;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; } }
       .header-nav-content__list-item {
         color: #ffffff;
         font-family: "Segoe UI semibold";
         font-weight: 600;
         font-size: 0.875rem; }
+        @media screen and (max-width: 568px) {
+          .header-nav-content__list-item {
+            padding: 30px;
+            font-size: 1.5rem; } }
         .header-nav-content__list-item-link {
           color: #ffffff;
           text-decoration: none; }
@@ -1036,160 +1072,33 @@ a {
   left: 7px;
   color: #fff; }
 
-@media screen and (max-width: 568px) {
-  #offcanvas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 1000;
-    background: #888;
-    -webkit-box-shadow: 0 0 15px #000 inset;
-    box-shadow: 0 0 15px #000 inset; }
-    #offcanvas a {
-      color: #FFF;
-      display: block;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding: 15px; } }
-
-#trigger {
+.icon-close {
   display: none; }
   @media screen and (max-width: 568px) {
-    #trigger {
+    .icon-close {
       z-index: 100000;
+      position: fixed;
+      top: 0;
+      right: -285px;
       display: block;
-      position: fixed; } }
+      cursor: pointer; } }
 
-@media screen and (max-width: 568px) {
-  .cmn-toggle-switch {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 70px;
-    font-size: 0;
-    text-indent: -9999px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: none;
-    border: none;
-    cursor: pointer;
-    -webkit-transition: background 0.3s;
-    transition: background 0.3s; } }
-
-.cmn-toggle-switch:focus {
-  outline: none; }
-
-.cmn-toggle-switch span {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 25px;
-  right: 25px;
-  height: 2px;
-  background: white; }
-
-.cmn-toggle-switch span::before,
-.cmn-toggle-switch span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 50%;
-  height: 2px;
-  background-color: #fff;
-  content: ""; }
-
-.cmn-toggle-switch span::before {
-  top: -7px; }
-
-.cmn-toggle-switch span::after {
-  bottom: -7px; }
-
-.cmn-toggle-switch span {
-  display: block;
-  position: absolute;
-  top: 35px;
-  left: 20px;
-  right: 20px;
-  height: 3px;
-  background: white; }
-
-.cmn-toggle-switch span::before,
-.cmn-toggle-switch span::after {
-  position: absolute;
-  display: block;
-  left: 0px;
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-  content: ""; }
-
-.cmn-toggle-switch span::before {
-  top: -7px; }
-
-.cmn-toggle-switch span::after {
-  bottom: -7px; }
-
-/**
- * Style 3
- *
- * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
- * arrow. Usually indicates an off canvas menu sliding in from left that
- * will be close on re-click of the icon.
- */
-.cmn-toggle-switch__htla {
-  background-color: rgba(50, 220, 100, 0.3); }
-
-.cmn-toggle-switch__htla span {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s; }
-
-.cmn-toggle-switch__htla span::before {
-  -webkit-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-transition: width 0.3s, top 0.3s, -webkit-transform 0.3s;
-  transition: width 0.3s, top 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, width 0.3s, top 0.3s;
-  transition: transform 0.3s, width 0.3s, top 0.3s, -webkit-transform 0.3s; }
-
-.cmn-toggle-switch__htla span::after {
-  -webkit-transform-origin: bottom right;
-  transform-origin: bottom right;
-  -webkit-transition: width 0.3s, bottom 0.3s, -webkit-transform 0.3s;
-  transition: width 0.3s, bottom 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s, -webkit-transform 0.3s; }
-
-/* active state, i.e. menu open */
-.cmn-toggle-switch__htla .active {
-  background-color: #18903c; }
-
-.cmn-toggle-switch__htla.active span {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.cmn-toggle-switch__htla.active span::before {
-  width: 40%; }
-
-.cmn-toggle-switch__htla.active span::after {
-  width: 40%; }
-
-.cmn-toggle-switch__htla.active span::before {
-  top: 1px;
-  -webkit-transform: translateX(20px) translateY(0px) rotate(45deg);
-  transform: translateX(20px) translateY(0px) rotate(45deg); }
-
-.cmn-toggle-switch__htla.active span::after {
-  bottom: 0;
-  -webkit-transform: translateX(20px) translateY(-1px) rotate(-45deg);
-  transform: translateX(20px) translateY(-1px) rotate(-45deg); }
+.icon-menu {
+  display: none; }
+  @media screen and (max-width: 568px) {
+    .icon-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: rgba(0, 156, 243, 0.5);
+      position: fixed;
+      z-index: 100000;
+      top: 0;
+      right: 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase; } }
