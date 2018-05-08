@@ -425,7 +425,7 @@ a
                                     img
                                         cursor: pointer
                                         &:hover
-                                            box-shadow: 0px 0px 0px 5px #ffa12d
+                                            box-shadow: 0px 0px 5px 5px #ffa12d
                                             border-radius: 8px
                             &-addwin
                                 flex-basis: 20%
@@ -442,19 +442,23 @@ a
                                     background: #f99a22
                                 .add
                                     position: relative
+                                        
                                 .plus
                                     display: block
                                     position: absolute
                                     top: 10px
                                     right: 10px
+                                    &:hover
+                                        border-radius: 50%
+                                        box-shadow: 0px 0px 10px 1px #009cf3
                             &-winimage
                                 flex-basis: 60%
                                 display: flex
                                 justify-content: center
                                 align-items: center
                                 img
-                                    max-height: 350px
-                                    max-width: 350px
+                                    max-width: 90%
+                                    height: auto
                                     display: none
                                 .current-image
                                     display: block
@@ -472,23 +476,30 @@ a
                                     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7)
                                     border-radius: 2px
                                     background-color: #ffffff
+                                    font-weight: 700
                             .botslider-input
                                 text-align: center
-                                margin-bottom: 26px
+                                margin-right: 28px
                                 width: 72px
                                 height: 29px
                                 box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7)
                                 border-radius: 2px
                                 background-color: #ffffff
-                        
-                        &-price
+                                font-weight: 700
+                            &-bottom-slider
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                flex-basis: 100%
+                                height: 140px
+                        .price
                             background-color: #dcdcdc
                             padding: 20px 50px
                             &__text
                                 font-size: 1.125rem
                             &__num
                                 font-size: 1.875rem
-                                font-weight: 700
+                                font-family: "Segoe UI semibold"
                             &__rub
                                 font-size: 1.125rem
                                 font-family: "Segoe UI semibold"
@@ -505,7 +516,13 @@ a
                             font-size: 1.5rem
                             text-align: center
                         &-body
-                            height: 200px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            height: 160px
+                            &-item
+                                font-size: 0.75rem
+                                padding: 10px
                     .features
                         &-title
                             width: 100%
@@ -515,23 +532,38 @@ a
                             font-size: 1.5rem
                             text-align: center
                         &-body
-                            height: 328px
+                            display: flex
+                            flex-direction: column
+                            &-item
+                                display: flex
+                                flex-direction: column
+                                padding: 10px 0
+                                .title
+                                    font-size: 1rem
+                                    font-weight: 700
                         &-footer
                             display: flex
                             color: #fff
                             justify-content: space-between
                             background-color: #3b3b3b
                             padding: 20px 50px
-                            &-price
+                            .price
                                 &__text
                                     font-size: 1.125rem
                                 &__num
                                     font-size: 1.875rem
-                                    font-weight: 700
+                                    font-family: "Segoe UI semibold"
                                 &__rub
                                     font-size: 1.125rem
                                     font-family: "Segoe UI semibold"
-                            &-order
+                            .order
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                color: #fff
+                                &-icon
+                                    display: flex
+                                    padding: 10px
     &-portfolio
         width: 100%
         background: linear-gradient(#3b3b3b 34%, #ececec 0)
@@ -843,6 +875,14 @@ a
         padding: 15px
         text-decoration: none
         text-transform: uppercase
+.ui-slider-handle
+    border-radius: 50%
+.ui-widget-header
+    background: #d7d7d7
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+    background: #b5b5b5
+.ui-state-active:focus, .ui-widget-content:focus, .ui-state-active:focus
+    border-radius: 50%
 
 
 

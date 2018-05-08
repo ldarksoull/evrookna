@@ -183,16 +183,16 @@
                             <div class="construction-type-body">
                                 <div class="construction-type-body-wincalc">
                                     <ul class="wincalc-selector">
-                                        <li class="wincalc-selector-item">
+                                        <li class="wincalc-selector-item item-1">
                                             <img src="img/1stvorka.png" alt="">
                                         </li>
-                                        <li class="wincalc-selector-item">
+                                        <li class="wincalc-selector-item item-2">
                                             <img src="img/2stvorki.png" alt="">
                                         </li>
-                                        <li class="wincalc-selector-item">
+                                        <li class="wincalc-selector-item item-3">
                                             <img src="img/3stvorki.png" alt="">
                                         </li>
-                                        <li class="wincalc-selector-item">
+                                        <li class="wincalc-selector-item item-4">
                                             <img src="img/balkon.png" alt="">
                                         </li>
                                     </ul>
@@ -208,10 +208,10 @@
                                         </div>
                                     </div>
                                     <div class="construction-type-body-winimage">
-                                        <img src="img/1okno.png" alt="">
-                                        <img class="current-image" src="img/okno-main.png" alt="">
-                                        <img src="img/3okno.png" alt="">
-                                        <img src="img/balkon.png" alt="">
+                                        <img class="winimage image-1" src="img/1stv.jpg" alt="">
+                                        <img class="winimage image-2 current-image" src="img/2stv.jpg" alt="">
+                                        <img class="winimage image-3" src="img/3stv.jpg" alt="">
+                                        <img class="winimage image-4" src="img/balkon.jpg" alt="">
                                     </div>
                                     <div class="construction-type-body-vertical-slider">
                                         <label for="amount"></label>
@@ -222,34 +222,144 @@
                                 <div class="construction-type-body-bottom-slider">
                                     <label for="amount2"></label>
                                     <input type="text" id="amount2" class="botslider-input" readonly>
-                                    <div id="slider-range-min"></div>
+                                    <div id="slider-range-min" style="width:300px;"></div>
                                 </div>
                             </div>
                             <footer class="construction-type-price">
-                                <p class="price__text">Стоимость окна</p>
-                                <p class="price__num">16 900
-                                    <span class="price__rub">руб.</span>
-                                </p>
+                                <div class="price">
+                                    <p class="price__text">Стоимость окна</p>
+                                    <p class="price__num">
+                                        <span class="price__num-cost">16 900</span>
+                                        <span class="price__rub">руб.</span>
+                                    </p>
+                                </div>
                             </footer>
                         </div>
                     </div>
                     <div class="main-windows-calc-content-inner-right">
                         <div class="wood-type">
                             <header class="wood-type-title">2 Выберите породу дерева</header>
-                            <div class="wood-type-body"></div>
+                            <div class="wood-type-body">
+                                <div class="wood-type-body-item">
+                                    <div class="wood-type-body-item__image">
+                                        <img src="img/mat-1.png" alt="">
+                                    </div>
+                                    <div class="wood-type-body-item__input">
+                                        <input type="radio" name="type" id="sosna" checked value="0.1">
+                                        <label for="sosna">Сосна</label>
+                                    </div>
+                                </div>
+                                <div class="wood-type-body-item">
+                                    <div class="wood-type-body-item__image">
+                                        <img src="img/mat-2.png" alt="">
+                                    </div>
+                                    <input type="radio" name="type" id="list" value="0.2">
+                                    <label for="list">Лиственница</label>
+                                </div>
+                                <div class="wood-type-body-item">
+                                    <div class="wood-type-body-item__image">
+                                        <img src="img/mat-3.png" alt="">
+                                    </div>
+                                    <input type="radio" name="type" id="dub" value="0.3">
+                                    <label for="dub">Дуб</label>
+                                </div>
+                                <div class="wood-type-body-item">
+                                    <div class="wood-type-body-item__image">
+                                        <img src="img/mat-4.png" alt="">
+                                    </div>
+                                    <input type="radio" name="type" id="meranti" value="0.4">
+                                    <label for="meranti">Меранти</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="features">
                             <header class="features-title">3 Выберите особенности</header>
-                            <div class="features-body"></div>
+                            <div class="features-body">
+                                <div class="features-body-item">
+                                    <div class="title">
+                                        Тип окна
+                                    </div>
+                                    <div class="block">
+                                    <div class="block__inner">
+                                        <input type="radio" name="window" id="wood">
+                                        <label for="wood">Деревянное окно</label>
+                                    </div>
+                                    <div class="window-type__alum">
+                                        <input type="radio" name="window" id="alum">
+                                        <label for="alum">Дерево-алюминий</label>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="features-body-item">
+                                    <div class="title">
+                                        Тип стеклопакета
+                                    </div>
+                                    <div class="block">
+                                    <div class="block__inner">
+                                        <input type="radio" name="package" id="dbl">
+                                        <label for="dbl">Двухкамерный</label>
+                                    </div>
+                                    <div class="block__inner">
+                                        <input type="radio" name="package" id="solo">
+                                        <label for="solo">Однокамерный</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="features-body-item">
+                                    <div class="title">
+                                        Тип ручки
+                                    </div>
+                                    <div class="block">
+                                    <div class="block__inner">
+                                        <input type="radio" name="hand" id="without">
+                                        <label for="without">Ручка без ключа</label>
+                                    </div>
+                                    <div class="block__inner">
+                                        <input type="radio" name="hand" id="with">
+                                        <label for="with">Ручка с ключом</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="features-body-item">
+                                    <div class="extra-elements-title title">
+                                        Дополнительные елементы
+                                    </div>
+                                    <div class="extra-elements-body">
+                                        <input type="checkbox" name="otliv" id="extra">
+                                        <label for="with">Отлив</label>
+                                        <input type="checkbox" name="podokonnik" id="extra">
+                                        <label for="with">Подоконник / порог</label>
+                                        <input type="checkbox" name="mech" id="extra">
+                                        <label for="with">Откидной механизм</label>
+                                        <input type="checkbox" name="child" id="extra">
+                                        <label for="with">Детский замок</label>
+                                        <input type="checkbox" name="moskit" id="extra">
+                                        <label for="with">Москитная сетка</label>
+                                        <input type="checkbox" name="otkos" id="extra">
+                                        <label for="with">Откосы</label>
+                                        <input type="checkbox" name="motage" id="extra">
+                                        <label for="with">Монтаж</label>
+                                        <input type="checkbox" name="noise" id="extra">
+                                        <label for="with">Шумоизоляция</label>
+                                        <input type="checkbox" name="energy" id="extra">
+                                        <label for="with">Энергосберегающий</label>
+                                        <input type="checkbox" name="multyfunc" id="extra">
+                                        <label for="with">Многофунциональный</label>
+                                    </div>
+                                </div>
+                            </div>
                             <footer class="features-footer">
                                 <div class="price">
                                     <p class="price__text">Стоимость всего заказа</p>
-                                    <p class="price__num">21 200
+                                    <p class="price__num">
+                                        <span class="price__num-cost">21 200</span>
                                         <span class="price__rub">руб.</span>
                                     </p>
                                 </div>
-                                <div class="order">
-                                    <img src="img/oformit-icon.svg" alt="icon">Оформить заказ</div>
+                                <a href="#" class="order">
+                                    <img class="order-icon" src="img/oformit-icon.svg" alt="icon">
+                                    <div class="order-text">Оформить заказ</div>
+                                </a>
                             </footer>
                         </div>
                     </div>
