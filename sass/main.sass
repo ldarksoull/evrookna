@@ -394,12 +394,12 @@ a
                     text-align: center
             &-inner
                 display: flex
-                @media screen and(max-width: 930px)
+                @media screen and(max-width: 1070px)
                     flex-direction: column
                 &-left
                     width: 50%
                     margin-right: 20px
-                    @media screen and(max-width: 930px)
+                    @media screen and(max-width: 1070px)
                         width: 100%
                     .construction-type
                         &-title
@@ -505,9 +505,10 @@ a
                                 font-family: "Segoe UI semibold"
                 &-right
                     width: 50%
-                    @media screen and(max-width: 930px)
+                    @media screen and(max-width: 1070px)
                         width: 100%
                     .wood-type
+                        background: #fff
                         &-title
                             width: 100%
                             background-color: #009cf3
@@ -519,7 +520,7 @@ a
                             display: flex
                             justify-content: center
                             align-items: center
-                            height: 160px
+                            height: 138px
                             &-item
                                 font-size: 0.75rem
                                 padding: 10px
@@ -534,13 +535,60 @@ a
                         &-body
                             display: flex
                             flex-direction: column
+                            background: #fff
+                            padding: 31.5px 0
                             &-item
                                 display: flex
                                 flex-direction: column
                                 padding: 10px 0
+                                margin-left: 50px
+                                @media screen and(max-width: 568px)
+                                    margin-left: 30px
+                                @media screen and(max-width: 470px)
+                                    margin-left: 10px
+                                .block
+                                    display: flex
+                                    &__inner
+                                        flex-basis: 40%
+                                        padding: 0
+                                        display: inline-flex
+                                        justify-content: flex-start
+                                        align-items: center
+                                        width: 100px
+                                        @media screen and(max-width: 568px)
+                                            flex-basis: 50%
+                                        input
+                                            margin-top: 3px
+                                            margin-right: 10px
                                 .title
                                     font-size: 1rem
                                     font-weight: 700
+                                .extra-elements-body
+                                    display: flex
+                                    flex-wrap: wrap
+                                    padding: 10px 0
+                                    @media screen and(max-width: 470px)
+                                        flex-direction: column
+                                    &-item
+                                        flex-grow: 0
+                                        flex-basis: 40%
+                                        padding: 0
+                                        display: inline-flex
+                                        justify-content: flex-start
+                                        align-items: center
+                                        width: 100px
+                                        margin-top: -5px
+                                        @media screen and(max-width: 568px)
+                                            flex-basis: 50%
+                                        @media screen and(max-width: 470px)
+                                            flex-basis: 100%
+                                            width: 100%
+                                        
+                                        input
+                                            margin-top: 3px
+                                            margin-right: 10px
+
+                                    
                         &-footer
                             display: flex
                             color: #fff

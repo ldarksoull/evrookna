@@ -105,12 +105,151 @@ function trigger(x) {
 }
 
 var material = $('input[name="type"]:checked').val();
+var typeWindow = $('input[name="window"]:checked').val();
+var packageType = $('input[name="window"]:checked').val();
+var hand = $('input[name="window"]:checked').val();
+//checkboxes
+var otliv = $('input[name="otliv"]'); 
+var podokonnik = $('input[name="podokonnik"]');
+var mechanizm = $('input[name="mechanizm"]');
+var childLock = $('input[name="child-lock"]');
+var moskit = $('input[name="moskit"]');
+var otkos = $('input[name="otkos"]');
+var montage = $('input[name="montage"]');
+var noise = $('input[name="noise"]');
+var lessEnergy = $('input[name="less-energy"]');
+var multyfunc = $('input[name="multyfunc"]');
+
+var otlivValue = 0;
+var podokonnikValue = 0;
+var mechanizmValue = 0;
+var childLockValue = 0;
+var moskitValue = 0;
+var otkosValue = 0;
+var montageValue = 0;
+var noiseValue = 0;
+var lessEnergyValue = 0;
+var multyfuncValue = 0;
+
+otliv.on('change', function(){
+  if ($(this).prop('checked')) {
+    otlivValue = 100;
+}
+  else{
+    otlivValue = 0;
+  }
+  total();
+});
+
+podokonnik.on('change', function(){
+  if ($(this).prop('checked')) {
+    podokonnikValue = 200;
+}
+  else{
+    podokonnikValue = 0;
+  }
+  total();
+});
+
+mechanizm.on('change', function(){
+  if ($(this).prop('checked')) {
+    mechanizmValue = 300;
+}
+  else{
+    mechanizmValue = 0;
+  }
+  total();
+});
+
+childLock.on('change', function(){
+  if ($(this).prop('checked')) {
+    childLockValue = 400;
+}
+  else{
+    childLockValue = 0;
+  }
+  total();
+});
+
+moskit.on('change', function(){
+  if ($(this).prop('checked')) {
+    moskitValue = 500;
+}
+  else{
+    moskitValue = 0;
+  }
+  total();
+});
+
+otkos.on('change', function(){
+  if ($(this).prop('checked')) {
+    otkosValue = 600;
+}
+  else{
+    otkosValue = 0;
+  }
+  total();
+});
+
+montage.on('change', function(){
+  if ($(this).prop('checked')) {
+    montageValue = 700;
+}
+  else{
+    montageValue = 0;
+  }
+  total();
+});
+
+noise.on('change', function(){
+  if ($(this).prop('checked')) {
+    noiseValue = 800;
+}
+  else{
+    noiseValue = 0;
+  }
+  total();
+});
+
+lessEnergy.on('change', function(){
+  if ($(this).prop('checked')) {
+    lessEnergyValue = 900;
+}
+  else{
+    lessEnergyValue = 0;
+  }
+  total();
+});
+
+multyfunc.on('change', function(){
+  if ($(this).prop('checked')) {
+    multyfuncValue = 1000;
+}
+  else{
+    multyfuncValue = 0;
+  }
+  total();
+});
+
+
+$('input[name="hand"]').on('change', function() {
+  hand = $("input[name='hand']:checked").val();
+  total();
+});
+$('input[name="package"]').on('change', function() {
+  packageType = $("input[name='package']:checked").val();
+  total();
+});
+$('input[name="window"]').on('change', function() {
+  typeWindow = $("input[name='window']:checked").val();
+  total();
+});
 $('input[name="type"]').on('change', function() {
     material = $("input[name='type']:checked").val();
     total();
 });
 
 function total() {
-    var total = Math.round((v + h) * winType * material);
+    var total = Math.round((((v + h) * (winType * material * typeWindow * packageType)) + +hand) + otlivValue + podokonnikValue + mechanizmValue + childLockValue + moskitValue + otkosValue + montageValue + noiseValue + lessEnergyValue + multyfuncValue) ;
     $(".price__num").html(total + " руб");
 }

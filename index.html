@@ -281,11 +281,11 @@
                                     </div>
                                     <div class="block">
                                     <div class="block__inner">
-                                        <input type="radio" name="window" id="wood">
+                                        <input type="radio" name="window" id="wood" value="1.1" checked>
                                         <label for="wood">Деревянное окно</label>
                                     </div>
-                                    <div class="window-type__alum">
-                                        <input type="radio" name="window" id="alum">
+                                    <div class="block__inner">
+                                        <input type="radio" name="window" id="alum" value="1.2">
                                         <label for="alum">Дерево-алюминий</label>
                                     </div>
                                     </div>
@@ -296,11 +296,11 @@
                                     </div>
                                     <div class="block">
                                     <div class="block__inner">
-                                        <input type="radio" name="package" id="dbl">
+                                        <input type="radio" name="package" id="dbl" value="1.2">
                                         <label for="dbl">Двухкамерный</label>
                                     </div>
                                     <div class="block__inner">
-                                        <input type="radio" name="package" id="solo">
+                                        <input type="radio" name="package" id="solo" value="1.1" checked>
                                         <label for="solo">Однокамерный</label>
                                     </div>
                                 </div>
@@ -311,11 +311,11 @@
                                     </div>
                                     <div class="block">
                                     <div class="block__inner">
-                                        <input type="radio" name="hand" id="without">
+                                        <input type="radio" name="hand" id="without" value="100" checked>
                                         <label for="without">Ручка без ключа</label>
                                     </div>
                                     <div class="block__inner">
-                                        <input type="radio" name="hand" id="with">
+                                        <input type="radio" name="hand" id="with" value="200">
                                         <label for="with">Ручка с ключом</label>
                                     </div>
                                 </div>
@@ -325,26 +325,46 @@
                                         Дополнительные елементы
                                     </div>
                                     <div class="extra-elements-body">
-                                        <input type="checkbox" name="otliv" id="extra">
-                                        <label for="with">Отлив</label>
-                                        <input type="checkbox" name="podokonnik" id="extra">
-                                        <label for="with">Подоконник / порог</label>
-                                        <input type="checkbox" name="mech" id="extra">
-                                        <label for="with">Откидной механизм</label>
-                                        <input type="checkbox" name="child" id="extra">
-                                        <label for="with">Детский замок</label>
-                                        <input type="checkbox" name="moskit" id="extra">
-                                        <label for="with">Москитная сетка</label>
-                                        <input type="checkbox" name="otkos" id="extra">
-                                        <label for="with">Откосы</label>
-                                        <input type="checkbox" name="motage" id="extra">
-                                        <label for="with">Монтаж</label>
-                                        <input type="checkbox" name="noise" id="extra">
-                                        <label for="with">Шумоизоляция</label>
-                                        <input type="checkbox" name="energy" id="extra">
-                                        <label for="with">Энергосберегающий</label>
-                                        <input type="checkbox" name="multyfunc" id="extra">
-                                        <label for="with">Многофунциональный</label>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="otliv" id="otliv" value="0">
+                                            <label for="otliv">Отлив</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="podokonnik" id="podokonnik" value="0">
+                                            <label for="podokonnik">Подоконник / порог</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="mechanizm" id="mechanizm" value="0">
+                                            <label for="mechanizm">Откидной механизм</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="child-lock" id="child-lock" value="0">
+                                            <label for="child-lock">Детский замок</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="moskit" id="moskit" value="0">
+                                            <label for="moskit">Москитная сетка</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="otkos" id="otkos" value="0">
+                                            <label for="otkos">Откосы</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="montage" id="montage" value="0">
+                                            <label for="montage">Монтаж</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="noise" id="noise" value="0">
+                                            <label for="noise">Шумоизоляция</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="less-energy" id="less-energy" value="0">
+                                            <label for="less-energy">Энергосберегающий</label>
+                                        </div>
+                                        <div class="extra-elements-body-item">
+                                            <input type="checkbox" name="multyfunc" id="multyfunc" value="0">
+                                            <label for="multyfunc">Многофунциональный</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
