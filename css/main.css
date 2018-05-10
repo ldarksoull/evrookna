@@ -769,20 +769,40 @@ a {
               color: #fff;
               font-size: 1.5rem;
               text-align: center; }
-            .main-windows-calc-content-inner-right .wood-type-body {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              height: 138px; }
-              .main-windows-calc-content-inner-right .wood-type-body-item {
-                font-size: 0.75rem;
+            @media screen and (min-width: 550px) {
+              .main-windows-calc-content-inner-right .wood-type-body {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 138px; } }
+            .main-windows-calc-content-inner-right .wood-type-body-item {
+              display: block;
+              font-size: 0.75rem;
+              padding: 10px; }
+              @media screen and (max-width: 550px) {
+                .main-windows-calc-content-inner-right .wood-type-body-item {
+                  -webkit-box-flex: 1;
+                  -ms-flex-positive: 1;
+                  flex-grow: 1;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: start;
+                  -ms-flex-pack: start;
+                  justify-content: flex-start;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center; } }
+              .main-windows-calc-content-inner-right .wood-type-body-item__image {
                 padding: 10px; }
+              .main-windows-calc-content-inner-right .wood-type-body-item__input {
+                padding: 5px; }
           .main-windows-calc-content-inner-right .features-title {
             width: 100%;
             background-color: #009cf3;
