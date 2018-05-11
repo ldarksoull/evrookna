@@ -1390,3 +1390,29 @@ a {
 
 .ui-state-active:focus, .ui-widget-content:focus, .ui-state-active:focus {
   border-radius: 50%; }
+
+.form-control {
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-align: center; }
+  .form-control:active {
+    background: transparent;
+    border: none;
+    color: #fff; }
+  .form-control::-webkit-input-placeholder {
+    background: transparent;
+    border: none;
+    color: #fff; }
+  .form-control:-ms-input-placeholder {
+    background: transparent;
+    border: none;
+    color: #fff; }
+  .form-control::-ms-input-placeholder {
+    background: transparent;
+    border: none;
+    color: #fff; }
+  .form-control::placeholder {
+    background: transparent;
+    border: none;
+    color: #fff; }
